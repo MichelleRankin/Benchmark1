@@ -26,7 +26,7 @@ class TestDaysOff(SimpleTestCase):
 
     def test_wed_true(self):
         response = self.client.get("/alarm-clock/False/3/")
-        self.assertContains(response, "10:00")
+        self.assertContains(response, "7:00")
 
 
 class TestLuckySum(SimpleTestCase):
